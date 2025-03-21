@@ -39,13 +39,13 @@ public class WechatConfig {
     static {
         userList.add(getUser(
                 "o1ef454V3_XGP0QZoP2s92aXn5o4", //扫码关注你的测试号以后，测试平台会出现TA的微信号
-                "RiP9ZGZBdUNwGmQKqzqymMFZ8xC58GdPDh35nmGjzqI", //要给这个人发送的模板ID
+                "VrGUrBFHaRN78a3H5C2f4KhjQZquQAkz2yNK9EQPWwA", //要给这个人发送的模板ID
                 "小刘同学 ", //咋称呼这个人
                 "山东省济南市历城区", //这个人的详细地址
                 "济南", //这个人在的城市
-                new BirthDay(2000,10,10,false,false,"pt生日快乐！！"),
-                new BirthDay(2000,9,12,true,false,"生日快乐哦~~"),
-                new BirthDay(2020,7,8,true,true),
+                new BirthDay(2000,10,12,false,false,"pt生日快乐！！"),
+                new BirthDay(2000,9,15,true,false,"生日快乐哦~~"),
+                new BirthDay(2013,9,1,true,true),
                 new BirthDay(2013,9,1,false,false,"周年快乐！！！")
         ));
 
