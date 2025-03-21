@@ -11,13 +11,13 @@ public class WechatConfig {
      * 你的微信的APPID
      * appId
      */
-    public static final String VxAppId = "your VxAppId";
+    public static final String VxAppId = "wx362f8f3a237038a0";
 
     /**
      * 你的微信的密钥
      * appSecret
      */
-    public static final String VxAppSecret = "your VxAppSecret";
+    public static final String VxAppSecret = "458010b5a7a0f0cf86bcbbfe8ebf1c96";
 
     public static final List<User> userList = new ArrayList<>();
 
