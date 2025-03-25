@@ -93,7 +93,7 @@ public class ApiMessageService {
      * @return 获取段子
      */
     private String getDuanZi() {
-        String url = "https://api.linhun.vip/api/duanzi?apiKey=c15d45f2e9d44858a7d95f421d0e7df1";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json;
         String result = HttpUtil.get(url);
         JSONObject jsonObject = JSONUtil.parseObj(result);
         return jsonObject.getStr("mum");
@@ -103,7 +103,7 @@ public class ApiMessageService {
      * @return 获取毒鸡汤
      */
     private String getDuJiTang() {
-        String url = "https://api.linhun.vip/api/dujitang?apiKey=067e54eb3b4128ed513f3bbad1a2f394";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         String result = HttpUtil.get(url);
         JSONObject jsonObject = JSONUtil.parseObj(result);
         return jsonObject.getStr("msg");
@@ -113,7 +113,7 @@ public class ApiMessageService {
      * @return 随机一句
      */
     private String getRandomSentence() {
-        String url = "https://api.linhun.vip/api/Aword?apiKey=3df6350da79fc77334102f876f72dad1";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         String result = HttpUtil.get(url);
         JSONObject jsonObject = JSONUtil.parseObj(result);
         return jsonObject.getStr("duanju");
@@ -123,7 +123,7 @@ public class ApiMessageService {
      * @return 谜语
      */
     private String getRiddle() {
-        String url = "https://api.linhun.vip/api/miyu?apiKey=ef06f5c549a2051286bb1a5d530c2bae";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         String result = HttpUtil.get(url);
         JSONObject jsonObject = JSONUtil.parseObj(result);
         String name = jsonObject.getStr("name");
