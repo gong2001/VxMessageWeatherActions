@@ -137,7 +137,7 @@ public class ApiMessageService {
      * @return 获取星座分析
      */
     private String getHoroscope(BirthDay birthDay) {
-        String url = "https://api.linhun.vip/api/xzys?apiKey=1ceee3e6244c63171e9f2228b5eac1a4&name=%s";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         int month = birthDay.getMonth();
         int day = birthDay.getDay();
         boolean chinese = birthDay.isChineseFlag();
@@ -182,7 +182,7 @@ public class ApiMessageService {
      * @return 获取历史上今天
      */
     private String getHistoryToday() {
-        String url = "https://api.linhun.vip/api/history?format=json&apiKey=099a422902a55e6020abf0f5f97031e9";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         String result = HttpUtil.get(url);
         JSONObject jsonObject = JSONUtil.parseObj(result);
         JSONArray content = jsonObject.getJSONArray("content");
@@ -207,7 +207,7 @@ public class ApiMessageService {
      * @return 新冠信息
      */
     private  String getXinGuan(String province){
-        String url = "https://api.linhun.vip/api/yiqing?apiKey=c2278bb8c0aa62d017e0c17b9561537c&keyword=%s";
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         String result = HttpUtil.get(String.format(url, province));
         JSONObject jsonObject = JSONUtil.parseObj(result);
         JSONObject data = jsonObject.getJSONObject("data");
