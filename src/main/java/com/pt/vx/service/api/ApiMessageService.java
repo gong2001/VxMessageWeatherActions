@@ -93,7 +93,7 @@ public class ApiMessageService {
      * @return 获取段子
      */
     private String getDuanZi() {
-        String url = "https://api.uomg.com/api/rand.qinghua?format=json;
+        String url = "https://api.uomg.com/api/rand.qinghua?format=json";
         String result = HttpUtil.get(url);
         JSONObject jsonObject = JSONUtil.parseObj(result);
         return jsonObject.getStr("mum");
